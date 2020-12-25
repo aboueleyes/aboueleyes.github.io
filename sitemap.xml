@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>localhost/</loc>
+    <lastmod>2020-12-25T21:22:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/posts/hello-world/</loc>
+    <lastmod>2020-12-25T21:22:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/posts/</loc>
+    <lastmod>2020-12-25T21:22:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/</loc>
+    <lastmod>2020-12-25T21:22:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/tags/untagged/</loc>
+    <lastmod>2020-12-25T21:22:14+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/posts/test/</loc>
+    <lastmod>2020-12-25T21:15:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>localhost/series/</loc>
+  </url>
+  
+</urlset>

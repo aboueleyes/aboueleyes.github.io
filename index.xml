@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello Friend NG</title>
+    <link>localhost/</link>
+    <description>Recent content on Hello Friend NG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 25 Dec 2020 21:22:14 +0200</lastBuildDate><atom:link href="localhost/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>localhost/posts/hello-world/</link>
+      <pubDate>Fri, 25 Dec 2020 21:22:14 +0200</pubDate>
+      
+      <guid>localhost/posts/hello-world/</guid>
+      <description>Title Item 1 dasdasdasd
+Item 2 dasdd
+Item 3 Item 4 Item 5 </description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>localhost/posts/test/</link>
+      <pubDate>Fri, 25 Dec 2020 21:15:20 +0200</pubDate>
+      
+      <guid>localhost/posts/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
