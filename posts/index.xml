@@ -5,48 +5,36 @@
         <description>Recent content in Posts on Ibrahim Abou Elenein</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Fri, 25 Dec 2020 22:10:22 +0200</lastBuildDate>
+        <lastBuildDate>Fri, 25 Dec 2020 23:13:53 +0200</lastBuildDate>
         <atom:link href="https://aboueleyes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Example</title>
-            <link>https://aboueleyes.github.io/posts/example/</link>
-            <pubDate>Fri, 25 Dec 2020 22:10:22 +0200</pubDate>
+            <title>Why I Started Blogging</title>
+            <link>https://aboueleyes.github.io/posts/why-i-started-blogging/</link>
+            <pubDate>Fri, 25 Dec 2020 23:13:53 +0200</pubDate>
             
-            <guid>https://aboueleyes.github.io/posts/example/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
-        </item>
-        
-        <item>
-            <title>Hello World</title>
-            <link>https://aboueleyes.github.io/posts/hello-world/</link>
-            <pubDate>Fri, 25 Dec 2020 21:22:14 +0200</pubDate>
-            
-            <guid>https://aboueleyes.github.io/posts/hello-world/</guid>
-            <description>Title Item 1 dasdasdasd
-Item 2 dasdd
-Item 3 Item 4 Item 5 </description>
-            <content type="html"><![CDATA[<h1 id="title">Title</h1>
-<h2 id="item-1">Item 1</h2>
-<p>dasdasdasd</p>
-<h2 id="item-2">Item 2</h2>
-<p>dasdd</p>
-<h2 id="item-3">Item 3</h2>
-<h2 id="item-4">Item 4</h2>
-<h2 id="item-5">Item 5</h2>
+            <guid>https://aboueleyes.github.io/posts/why-i-started-blogging/</guid>
+            <description>I would like to motivate my friends to blog, I will explain why.
+Documentation as a Way of Studying. One of the best ways to digest what you learn is to be able to articulate what you learned in your words and come up with takeaways. So, write a tutorial blog post or anything that will help you understand in-depth what you are learning and know it by heart.
+ If You Really Want to Master Something, Teach It The person who learns the most in any classroom is the teacher.</description>
+            <content type="html"><![CDATA[<p>I would like to motivate my friends to blog, I will explain why.</p>
+<h2 id="documentation-as-a-way-of-studying">Documentation as a Way of Studying.</h2>
+<p>One of the best ways to digest what you learn is to be able to articulate what you learned in your words and come up with takeaways. So, write a tutorial blog post or anything that will help you understand in-depth what you are learning and know it by heart.</p>
+<blockquote>
+<p>If You Really Want to Master Something, Teach It
+The person who learns the most in any classroom is the teacher.</p>
+</blockquote>
+<h2 id="someone-is-searching-for-what-you-will-write">Someone Is Searching for What You Will Write.</h2>
+<p>Don&rsquo;t hesitate to share your knowledge, you have something to share to the world!</p>
+<p>As an undergraduate, you learn computer science fundamentals and many subjects in-depth. You learn data structures, algorithms, machine learning, computer architecture, databases, and many other computer fundamentals. Once you are a graduate, you have a job and start focusing on coding more.
+You start to forget everything that you studied before, your learning curve is less as a graduate, and computer science always changes. So if you worked as a software developer, you may forget those operating system classes about scheduling techniques, even though they may help you to enhance your code. So even though what you learn as an undergraduate seems normal and well-known, graduates will enjoy reading and learning from what you write in on a daily basis.</p>
+<h2 id="encourages-you-to-self-learn-more">Encourages You to Self-Learn More</h2>
+<p>Once you start sharing your knowledge, get readers, you will be encouraged to learn more. Also, to be able to write better blog posts, you will always need to know a little more than what you study in university. Blogging educates you to read from others as well, so you will learn from others a lot.</p>
+<h2 id="as-a-journal">As a Journal</h2>
+<p>Last, studying anything takes a long time, and if you are in university it takes years! So, it is a great way to journal about your life as a student and see how you grew and learned more and more with time.</p>
+<h2 id="improve-your-writing-skills">Improve Your Writing Skills</h2>
+<p>One of the best ways to motivate yourself is to remember that you’re developing a skill that will serve you well for the rest of your life.</p>
 ]]></content>
-        </item>
-        
-        <item>
-            <title>Test</title>
-            <link>https://aboueleyes.github.io/posts/test/</link>
-            <pubDate>Fri, 25 Dec 2020 21:15:20 +0200</pubDate>
-            
-            <guid>https://aboueleyes.github.io/posts/test/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
         </item>
         
     </channel>

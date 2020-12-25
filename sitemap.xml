@@ -3,19 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://aboueleyes.github.io/blog/</loc>
-  </url>
-  
-  <url>
     <loc>https://aboueleyes.github.io/</loc>
+    <lastmod>2020-12-25T23:13:53+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://aboueleyes.github.io/series/</loc>
+    <loc>https://aboueleyes.github.io/posts/</loc>
+    <lastmod>2020-12-25T23:13:53+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://aboueleyes.github.io/tags/</loc>
+    <lastmod>2020-12-25T23:13:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aboueleyes.github.io/tags/untagged/</loc>
+    <lastmod>2020-12-25T23:13:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aboueleyes.github.io/posts/why-i-started-blogging/</loc>
+    <lastmod>2020-12-25T23:13:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://aboueleyes.github.io/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://aboueleyes.github.io/series/</loc>
   </url>
   
 </urlset>
