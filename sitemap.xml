@@ -3,41 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>localhost/</loc>
+    <loc>https://aboueleyes.github.io/</loc>
     <lastmod>2020-12-25T21:22:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/posts/hello-world/</loc>
+    <loc>https://aboueleyes.github.io/posts/hello-world/</loc>
     <lastmod>2020-12-25T21:22:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/posts/</loc>
+    <loc>https://aboueleyes.github.io/posts/</loc>
     <lastmod>2020-12-25T21:22:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/</loc>
+    <loc>https://aboueleyes.github.io/tags/</loc>
     <lastmod>2020-12-25T21:22:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/tags/untagged/</loc>
+    <loc>https://aboueleyes.github.io/tags/untagged/</loc>
     <lastmod>2020-12-25T21:22:14+02:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/posts/test/</loc>
+    <loc>https://aboueleyes.github.io/posts/test/</loc>
     <lastmod>2020-12-25T21:15:20+02:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost/blog/</loc>
+    <loc>https://aboueleyes.github.io/blog/</loc>
   </url>
   
   <url>
-    <loc>localhost/series/</loc>
+    <loc>https://aboueleyes.github.io/series/</loc>
   </url>
   
 </urlset>
