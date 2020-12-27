@@ -179,22 +179,22 @@ This in particular includes the various functionality ranging from formulas, cod
 <h2 id="markdown">Markdown</h2>
 <p>We all know how cool <code>markdown</code> is, and it has  very easy syntax, so can we really make presentations with <code>markdown</code>? Let&rsquo;s do it!</p>
 <p>First you should have <code>LaTeX</code> installed</p>
-<pre><code> $ sudo apt install texlive-latex-recommended
-</code></pre><p>Also download <code>pandoc</code></p>
-<pre><code>$ sudo apt install pandoc
-</code></pre><p>Now we are ready!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> $ sudo apt install texlive-latex-recommended
+</code></pre></div><p>Also download <code>pandoc</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt install pandoc
+</code></pre></div><p>Now we are ready!</p>
 <p>Open <code>vim</code> or your favorite text-editor and create the md file</p>
-<pre><code>$ mkdir pres 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir pres 
 $ cd pres 
 $ vim pres.md 
-</code></pre><p>And now write the following into the file</p>
-<pre><code>---
+</code></pre></div><p>And now write the following into the file</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
 title:
-- Ibrahim's pres 
+<span style="color:#66d9ef">-</span> Ibrahim&#39;s pres 
 author:
-- Ibrahim Abou Elenein
+<span style="color:#66d9ef">-</span> Ibrahim Abou Elenein
 theme:
-- Copenhagen
+<span style="color:#66d9ef">-</span> Copenhagen
 ---
 
 # Section One 
@@ -207,11 +207,11 @@ Some Text
 
 # Section Two 
 
-## subsection 
-BLA BLA BLA
-</code></pre><p>Now run the following command</p>
-<pre><code>$ pandoc pres.md -t beamer -o pres.pdf 
-</code></pre><p><img src="/img/src1.png" alt="">
+<span style="color:#75715e">## subsection 
+</span><span style="color:#75715e"></span>BLA BLA BLA
+</code></pre></div><p>Now run the following command</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ pandoc pres.md -t beamer -o pres.pdf 
+</code></pre></div><p><img src="/img/src1.png" alt="">
 <img src="/img/src2.png" alt="">
 <img src="/img/src3.png" alt=""></p>
 <p>Voilà!, here we have a very nice presentation, you can use all the features of <code>markdown</code>, The Sections are new slides.</p>
