@@ -5,8 +5,86 @@
         <description>Recent content in Posts on Ibrahim Abou Elenein</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 25 Dec 2020 23:13:53 +0200</lastBuildDate>
+        <lastBuildDate>Sun, 27 Dec 2020 19:57:50 +0200</lastBuildDate>
         <atom:link href="https://aboueleyes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>The Easiest Way Ever to Make Nice Presentaions</title>
+            <link>https://aboueleyes.github.io/posts/the-easiest-way-ever-to-make-nice-presentaions/</link>
+            <pubDate>Sun, 27 Dec 2020 19:57:50 +0200</pubDate>
+            
+            <guid>https://aboueleyes.github.io/posts/the-easiest-way-ever-to-make-nice-presentaions/</guid>
+            <description>As a Linux user, we really love doing things from the terminal, we love to code, we hate GUI, We have no time to drag and drop as “muggles”
+ I care about the technology. There are people who care about the user interface (UI); I can’t do UI to save my life. I mean if I was stranded on an island and the only way to get off that island was to make a pretty UI, I’d die there.</description>
+            <content type="html"><![CDATA[<p><img src="/img/image.png" alt=""></p>
+<p>As a <code>Linux</code> user, we really love doing things from the terminal, we love to code, we hate <code>GUI</code>, We have no time to drag and drop as <code>“muggles”</code></p>
+<blockquote>
+<p>I care about the technology. There are people who care about the user interface (UI); I can’t do UI to save my life. I mean if I was stranded on an island and the only way to get off that island was to make a pretty UI, I’d die there.
+&ndash; <!-- raw HTML omitted --><em>Linus Torvalds</em><!-- raw HTML omitted --></p>
+</blockquote>
+<p>Microsoft PowerPoint is really pain, specially if you are writing presentation that includes Math equations or code snippets</p>
+<h2 id="latex">LaTeX</h2>
+<p>So using latex <code>beamer</code> is much superior for many reasons :</p>
+<ol>
+<li>
+<p>Consistent tools. I use LaTeX for my regular study. I need an easy way to get my &ldquo;printed&rdquo; work into the presentation. <code>LaTeX-beamer</code> allows me to do this very easily. All the way to publishing it on my homepage.
+This in particular includes the various functionality ranging from formulas, code excerpts to any other <code>LaTeX</code> extension.</p>
+</li>
+<li>
+<p>Focus. On the contents, not on the presentation. Once you are used to <code>LaTeX</code>presentations, <code>PowerPoint</code> pretty much looks like a drawing program to you, instead of a presentation tool.</p>
+</li>
+<li>
+<p>Quality. Even with &ldquo;just&rdquo; screen resolution, <code>LaTeX</code> just looks more polished.</p>
+</li>
+<li>
+<p>As for being img. I never use animations in my presentations. They tend to distract people from what I&rsquo;m saying. And after all, it&rsquo;s not a slideshow, but a talk.</p>
+</li>
+<li>
+<p>Programmable. You can even write programs to generate your slides. Or plots.</p>
+</li>
+</ol>
+<p>But this may be too much for simple presentations</p>
+<h2 id="markdown">Markdown</h2>
+<p>We all know how cool <code>markdown</code> is, and it&rsquo;s very easy syntax, so can we really make presentations with <code>markdown</code>? Let&rsquo;s do it!</p>
+<p>First you should have <code>LaTeX</code> installed</p>
+<pre><code> $ sudo apt install texlive-latex-recommended
+</code></pre><p>Also download <code>pandoc</code></p>
+<pre><code>$ sudo apt install pandoc
+</code></pre><p>Now we are ready!</p>
+<p>Open <code>vim</code> or your favorite text-editor and create the md file</p>
+<pre><code>$ mkdir pres 
+$ cd pres 
+$ vim pres.md 
+</code></pre><p>And now write the following into the file</p>
+<pre><code>---
+title:
+- Ibrahim's pres 
+author:
+- Ibrahim Abou Elenein
+theme:
+- Copenhagen
+---
+
+# Section One 
+
+Some Text 
+
++ item one 
++ item two 
++ etc ... 
+
+# Section Two 
+
+## subsection 
+BLA BLA BLA
+</code></pre><p>Now run the following command</p>
+<pre><code>$ pandoc pres.md -t beamer -o pres.pdf 
+</code></pre><p><img src="/img/src1.png" alt="">
+<img src="/img/src2.png" alt="">
+<img src="/img/src3.png" alt=""></p>
+<p>Voilà!, here we have a very nice presentation, you can use all the features of <code>markdown</code>, The Sections are new slides.</p>
+]]></content>
+        </item>
         
         <item>
             <title>Why I Started Blogging</title>
