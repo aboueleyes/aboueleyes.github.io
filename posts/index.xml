@@ -45,7 +45,7 @@ This in particular includes the various functionality ranging from formulas, cod
 </ol>
 <p>But this may be too much for simple presentations</p>
 <h2 id="markdown">Markdown</h2>
-<p>We all know how cool <code>markdown</code> is, and it&rsquo;s very easy syntax, so can we really make presentations with <code>markdown</code>? Let&rsquo;s do it!</p>
+<p>We all know how cool <code>markdown</code> is, and it has  very easy syntax, so can we really make presentations with <code>markdown</code>? Let&rsquo;s do it!</p>
 <p>First you should have <code>LaTeX</code> installed</p>
 <pre><code> $ sudo apt install texlive-latex-recommended
 </code></pre><p>Also download <code>pandoc</code></p>
