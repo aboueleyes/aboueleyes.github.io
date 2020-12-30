@@ -6,7 +6,18 @@
     <description>Recent content on Ibrahim Abou Elenein</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Dec 2020 19:57:50 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 00:13:13 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Vim Setup</title>
+      <link>https://aboueleyes.github.io/posts/my-vim-setup/</link>
+      <pubDate>Thu, 31 Dec 2020 00:13:13 +0200</pubDate>
+      
+      <guid>https://aboueleyes.github.io/posts/my-vim-setup/</guid>
+      <description>Writing English words and writing code are very different activities. When programming, you spend more time switching files, reading, navigating, and editing code compared to writing a long stream. It makes sense that there are different types of programs for writing English words versus code
+As programmers, we spend most of our time editing code, so it’s worth investing time mastering an editor that fits your needs.
+Vim has a rich history; it originated from the Vi editor (1976), and it’s still being developed today.</description>
+    </item>
+    
     <item>
       <title>The Easiest Way Ever to Make Nice Presentaions</title>
       <link>https://aboueleyes.github.io/posts/the-easiest-way-ever-to-make-nice-presentaions/</link>

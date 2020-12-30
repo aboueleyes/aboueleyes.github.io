@@ -6,16 +6,16 @@
     <description>Recent content in untagged on Ibrahim Abou Elenein</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Dec 2020 23:13:53 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Dec 2020 00:13:13 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why I Started Blogging</title>
-      <link>https://aboueleyes.github.io/posts/why-i-started-blogging/</link>
-      <pubDate>Fri, 25 Dec 2020 23:13:53 +0200</pubDate>
+      <title>My Vim Setup</title>
+      <link>https://aboueleyes.github.io/posts/my-vim-setup/</link>
+      <pubDate>Thu, 31 Dec 2020 00:13:13 +0200</pubDate>
       
-      <guid>https://aboueleyes.github.io/posts/why-i-started-blogging/</guid>
-      <description>I would like to motivate my friends to blog, I will explain why.
-Documentation as a Way of Studying. One of the best ways to digest what you learn is to be able to articulate what you learned in your words and come up with takeaways. So, write a tutorial blog post or anything that will help you understand in-depth what you are learning and know it by heart.
- If You Really Want to Master Something, Teach It The person who learns the most in any classroom is the teacher.</description>
+      <guid>https://aboueleyes.github.io/posts/my-vim-setup/</guid>
+      <description>Writing English words and writing code are very different activities. When programming, you spend more time switching files, reading, navigating, and editing code compared to writing a long stream. It makes sense that there are different types of programs for writing English words versus code
+As programmers, we spend most of our time editing code, so it’s worth investing time mastering an editor that fits your needs.
+Vim has a rich history; it originated from the Vi editor (1976), and it’s still being developed today.</description>
     </item>
     
   </channel>
