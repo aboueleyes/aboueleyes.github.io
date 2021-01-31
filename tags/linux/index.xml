@@ -6,7 +6,17 @@
     <description>Recent content in Linux on Ibrahim Abou Elenein</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Dec 2020 00:13:13 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Feb 2021 00:41:47 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim Sessions</title>
+      <link>https://aboueleyes.github.io/posts/vim-sessions/</link>
+      <pubDate>Mon, 01 Feb 2021 00:41:47 +0200</pubDate>
+      
+      <guid>https://aboueleyes.github.io/posts/vim-sessions/</guid>
+      <description>Vim is an awesome editor. Vim provides a tool to save your time, helping you to get back to the previous mindset of the last time you left the project. It’s called sessions.
+ A Session keeps the Views for all windows, plus the global settings. You can save a Session and when you restore it later the window layout looks the same. You can use a Session to quickly switch between different projects, automatically loading the files you were last working on in that project.</description>
+    </item>
+    
     <item>
       <title>My Vim Setup</title>
       <link>https://aboueleyes.github.io/posts/my-vim-setup/</link>
