@@ -195,7 +195,7 @@ The dot <code>.</code> character indicates the current line and <code>$</code> -
 <p>Comment lines (add # before the line) from 15 to 20:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">20</span>s<span style="color:#e6db74">/^/</span>#/<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Uncomment lines (remove # before the line) from 15 to 20:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">20</span>s<span style="color:#e6db74">/^#/</span>/<span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-vim" data-lang="vim">:<span style="color:#ae81ff">15</span>,<span style="color:#ae81ff">20</span>s<span style="color:#e6db74">/^#/</span>/<span style="color:#960050;background-color:#1e0010">
 </span></code></pre></div><p>Replace each match of the last search pattern with &lsquo;bar&rsquo;.
 For example, you might first place the cursor on the word foo then press * to search for that word.
 The above substitute would then change all words exactly matching &lsquo;foo&rsquo; to &lsquo;bar&rsquo;.</p>
