@@ -6,7 +6,20 @@
     <description>Recent content in Linux on Ibrahim Abou Elenein</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Feb 2021 00:41:47 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Feb 2021 23:57:53 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vim Find and Replace</title>
+      <link>https://aboueleyes.github.io/posts/vim-find-and-replace/</link>
+      <pubDate>Wed, 03 Feb 2021 23:57:53 +0200</pubDate>
+      
+      <guid>https://aboueleyes.github.io/posts/vim-find-and-replace/</guid>
+      <description>![vim.png]
+Basic search and replace In Vim, you can find and replace text using the :substitute (:s) command.
+To run commands in Vim, you must be in normal mode, the default mode when starting the editor. To go back to normal mode from any other mode, just press the ‘Esc’ key.
+The general form of the substitute command is as follows:
+:[range]s/{pattern}/{string}/[flags] [count]The command searches each line in [range] for a {pattern}, and replaces it with a {string}.</description>
+    </item>
+    
     <item>
       <title>Vim Sessions</title>
       <link>https://aboueleyes.github.io/posts/vim-sessions/</link>
