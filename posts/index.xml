@@ -5,8 +5,64 @@
         <description>Recent content in Posts on Ibrahim Abou Elenein</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 03 Feb 2021 23:57:53 +0200</lastBuildDate>
+        <lastBuildDate>Mon, 08 Feb 2021 23:12:06 +0200</lastBuildDate>
         <atom:link href="https://aboueleyes.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Oops Committed My Password to Githup Python</title>
+            <link>https://aboueleyes.github.io/posts/oops-committed-my-password-to-githup-python/</link>
+            <pubDate>Mon, 08 Feb 2021 23:12:06 +0200</pubDate>
+            
+            <guid>https://aboueleyes.github.io/posts/oops-committed-my-password-to-githup-python/</guid>
+            <description>Did you ever commit a password to githup? You may accidently commit your password to githup right after tseting your program
+How to fix a password leak accident?  Don&amp;rsquo;t Make a new commit with password removed!! Don&amp;rsquo;t rebase the commit! REVOKE the password! make sure the password is not valid anymore  Preventing Password Leaks in Code This is Wrong!
+password = &amp;#39;*#HelloThisMyPassword!&amp;#39; secret_key = &amp;#39;^CanYouHackMe?$&amp;#39; url = &amp;#39;https://username:password@site.com&amp;#39; This is Right</description>
+            <content type="html"><![CDATA[<h2 id="did-you-ever-commit-a-password-to-githup">Did you ever commit a password to githup?</h2>
+<p>You may accidently commit your password to githup right after tseting your program</p>
+<h2 id="how-to-fix-a-password-leak-accident">How to fix a password leak accident?</h2>
+<ol>
+<li>Don&rsquo;t Make a new commit with password removed!!</li>
+<li>Don&rsquo;t rebase the commit!</li>
+<li><strong>REVOKE the password! make sure the password is not valid anymore</strong></li>
+</ol>
+<h2 id="preventing-password-leaks-in-code">Preventing Password Leaks in Code</h2>
+<p>This is Wrong!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;*#HelloThisMyPassword!&#39;</span>
+secret_key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;^CanYouHackMe?$&#39;</span>
+url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://username:password@site.com&#39;</span>
+</code></pre></div><p>This is Right</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">password <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#39;PASSWORD&#39;</span>]
+secret_key <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;SECRET_KEY&#39;</span>]
+url <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;URL&#39;</span>,<span style="color:#e6db74">&#39;https://site.com&#39;</span>)
+</code></pre></div><h2 id="adding-passwords-to-your-environment">Adding passwords to your environment</h2>
+<p>You can include it in your <code>.bashrc</code> or <code>.profile</code></p>
+<p>if these keys are to a specific project you should include it in .env file in the project (add it to .gitignore)</p>
+<h2 id="lets-do-it-in-python">Let&rsquo;s do it in python</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os 
+<span style="color:#f92672">import</span> requests
+
+<span style="color:#75715e"># requests.get(&#39;https://api.github.com/user&#39;, auth=(&#39;user&#39;, &#39;pass&#39;))</span>
+requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;https://api.github.com/user&#39;</span>, auth<span style="color:#f92672">=</span>(os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;GITHUP_USER&#39;</span>),
+                                              os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;GITHUP_PASSWORD&#39;</span>)))
+
+</code></pre></div><p>now we want to create .env file don&rsquo;t forget it to add to .gitignore</p>
+<pre><code>GITHUP_USER=ibrahim
+GITHUP_PASSWORD=youWantMyPassword?HAHA 
+
+</code></pre><p>Now you want to import these environment variable we will use a python package for this</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo pip3 install python-dotenv
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> os 
+<span style="color:#f92672">import</span> requests
+<span style="color:#f92672">from</span> dotenv <span style="color:#f92672">import</span> load_dotenv 
+
+
+load_dotenv()
+requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;https://api.github.com/user&#39;</span>, auth<span style="color:#f92672">=</span>(os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;GITHUP_USER&#39;</span>),
+                                              os<span style="color:#f92672">.</span>environ<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;GITHUP_PASSWORD&#39;</span>)))
+
+</code></pre></div><p>Now it should it work properly</p>
+]]></content>
+        </item>
         
         <item>
             <title>Vim Find and Replace</title>

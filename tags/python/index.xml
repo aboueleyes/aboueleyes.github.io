@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Ibrahim Abou Elenein</title>
+    <link>https://aboueleyes.github.io/tags/python/</link>
+    <description>Recent content in Python on Ibrahim Abou Elenein</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Feb 2021 23:12:06 +0200</lastBuildDate><atom:link href="https://aboueleyes.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oops Committed My Password to Githup Python</title>
+      <link>https://aboueleyes.github.io/posts/oops-committed-my-password-to-githup-python/</link>
+      <pubDate>Mon, 08 Feb 2021 23:12:06 +0200</pubDate>
+      
+      <guid>https://aboueleyes.github.io/posts/oops-committed-my-password-to-githup-python/</guid>
+      <description>Did you ever commit a password to githup? You may accidently commit your password to githup right after tseting your program
+How to fix a password leak accident?  Don&amp;rsquo;t Make a new commit with password removed!! Don&amp;rsquo;t rebase the commit! REVOKE the password! make sure the password is not valid anymore  Preventing Password Leaks in Code This is Wrong!
+password = &amp;#39;*#HelloThisMyPassword!&amp;#39; secret_key = &amp;#39;^CanYouHackMe?$&amp;#39; url = &amp;#39;https://username:password@site.com&amp;#39; This is Right</description>
+    </item>
+    
+  </channel>
+</rss>
