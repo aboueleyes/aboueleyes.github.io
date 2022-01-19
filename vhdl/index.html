@@ -1,0 +1,96 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/katex/katex.min.css"> <link rel=stylesheet  href="/libs/highlight/github.min.css"> <link rel=stylesheet  href="/css/franklin.css"> <link rel=stylesheet  href="/css/poole_lanyon.css"> <link rel=stylesheet  href="/css/adjust.css"> <link rel=icon  href="/assets/favicon.png"> <title>VHDL</title> <input type=checkbox  class=sidebar-checkbox  id=sidebar-checkbox > <div class=sidebar  id=sidebar > <div class=sidebar-item > <p></p> </div> <nav class=sidebar-nav > <a class="sidebar-nav-item " href="/">Home</a> <a class="sidebar-nav-item " href="/blog/">Blog</a> </nav> <div class=sidebar-item > <p>&copy; Ibrahim Abou Elenein.</p> </div> </div> <!-- Wrap is the content to shift when toggling the sidebar. We wrap the content to avoid any CSS collisions with our real content. --> <div class=wrap > <div class=masthead > <div class=container > <h3 class=masthead-title > <a href="/" title=Home >Ibrahim's Blog</a> <small>I share stuff</small> </h3> </div> </div> <div class="container content"> <div class=franklin-content ><h1 id="vhdl_بصمجة"><a href="#vhdl_بصمجة" class=header-anchor >VHDL بصمجة </a></h1> <p><div class=franklin-toc ><ol><li><a href="#basic_entity">Basic Entity</a><ol><li><a href="#input_and_output">Input and Output</a><li><a href="#types_of_variabels">Types of variabels </a><li><a href="#generic">Generic </a><ol><li><a href="#example">Example</a></ol><li><a href="#use_entity_in_another_place">Use Entity in another place</a></ol><li><a href="#architecture">Architecture </a><ol><li><a href="#signal">Signal </a><li><a href="#component">Component </a><li><a href="#port_map">Port Map</a><li><a href="#select_signal_assignmnets">Select Signal Assignmnets </a><li><a href="#conditional_signal_assignment">Conditional signal assignment</a><li><a href="#for_generate">For Generate</a><li><a href="#if_generate">IF Generate</a><li><a href="#process_statement">Process Statement</a></ol><li><a href="#type">Type </a><li><a href="#user_defined_attribute">User defined attribute </a><li><a href="#case_statement">Case Statement</a><li><a href="#generic_map">Generic Map</a><li><a href="#loop">Loop </a><li><a href="#functions">Functions </a><ol><li><a href="#syntax">Syntax </a></ol></ol></div> </p> <h2 id=basic_entity ><a href="#basic_entity" class=header-anchor >Basic Entity</a></h2> <pre><code class="vhdl hljs"><span class=hljs-keyword >ENTITY</span> name <span class=hljs-keyword >IS</span> 
+    <span class=hljs-keyword >port</span>(_first, _second : <span class=hljs-keyword >in</span> <span class=hljs-built_in >std_logic</span>;
+    _Q : <span class=hljs-keyword >out</span> <span class=hljs-built_in >std_logic</span>);</code></pre> <h3 id=input_and_output ><a href="#input_and_output" class=header-anchor >Input and Output</a></h3> <ul> <li><p><code>Bit</code> 0 &amp; 1 only</p> <li><p><code>STD_LOGIC</code> 0, 1, X unknown, Z high Impedance</p> <li><p><code>STD_LOGIC_VECTOR</code>&#40;<span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathnormal">i</span></span></span></span> downto <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span>&#41; instead of repeating <code>i &gt; j</code></p> <li><p><code>Integer Range</code> <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathnormal">i</span></span></span></span> To <span class=katex ><span class=katex-mathml ><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi></mrow><annotation encoding="application/x-tex">j</annotation></semantics></math></span><span class=katex-html  aria-hidden=true ><span class=base ><span class=strut  style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span></span></span></span>. To prevent overflow.</p> </ul> <h3 id=types_of_variabels ><a href="#types_of_variabels" class=header-anchor >Types of variabels </a></h3> <ul> <li><p><code>In</code> assigned once &#40;Read ONLY&#41; &amp; it&#39;s only input of a function.</p> <li><p><code>Out</code> assigned once &#40;Write only&#41; &amp; it&#39;s only output of a function.</p> <li><p><code>Buffer</code> used when particular port need to be read &amp; written </p> <li><p><code>INOUT</code> it&#39;s like buffer but allows but allow the port to be connected to mulitpule source.</p> </ul> <h3 id=generic ><a href="#generic" class=header-anchor >Generic </a></h3> <p><code>Generic</code> is used to create a variable that can take on different values depending on size of component you&#39;re creating.</p> <h4 id=example ><a href="#example" class=header-anchor >Example</a></h4> <pre><code class="julia hljs">ENTITY _name IS
+    Generic (_N : <span class=hljs-built_in >Integer</span> := _defaultValue)
+    Port (_X: IN STD_LOGIC_VECTOR (_N downto <span class=hljs-number >0</span>);
+    _Y OUT STD_LOGIC_VECTOR(_N + <span class=hljs-number >1</span> downto <span class=hljs-number >0</span>));</code></pre> <h3 id=use_entity_in_another_place ><a href="#use_entity_in_another_place" class=header-anchor >Use Entity in another place</a></h3> <ol> <li><p><code>component</code> present in architecture of the other Entity</p> <li><p><code>Package</code> after writing the entity &amp; arch </p> </ol> <pre><code class="julia hljs">Package _Pname IS
+    component _name IS
+        Port (...);   &lt;- same as entity.
+    <span class=hljs-keyword >end</span> component;
+<span class=hljs-keyword >end</span> _Pname;</code></pre> <p>Import it in the other place.</p> <pre><code class="julia hljs">library work;
+use work._Pname.all;</code></pre> <h2 id=architecture ><a href="#architecture" class=header-anchor >Architecture </a></h2> <h3 id=signal ><a href="#signal" class=header-anchor >Signal </a></h3> <ul> <li><p><code>signal</code> variable that os neither input nor output.</p> <li><p>created before <code>begin</code></p> <li><p><code>signal s1, s2 : STD_LOGIC;</code></p> </ul> <h3 id=component ><a href="#component" class=header-anchor >Component </a></h3> <ul> <li><p>allows a previously created entity to be used as a component in a bigger architecture.</p> <li><p>created before begin </p> </ul> <pre><code class="julia hljs">Component fulladd 
+    PORT (x, y : IN STD_LOGIC, 
+    s : out STD_LOGIC);
+END Component;</code></pre> <h3 id=port_map ><a href="#port_map" class=header-anchor >Port Map</a></h3> <ul> <li><p>used to create interconnections between inputs, components, signals, ..etc.</p> <li><p>created after <code>begin</code>.</p> <li><p><code>stage0: fulladd portmap&#40;x, y, s&#41;;</code></p> </ul> <h3 id=select_signal_assignmnets ><a href="#select_signal_assignmnets" class=header-anchor >Select Signal Assignmnets </a></h3> <ul> <li><p>allows signal to be assigned one of several values.</p> <li><p>created after <code>begin</code>.</p> <li><p>keywords <code>with</code>, <code>when</code>, <code>others</code>, &#39;select&#39;</p> </ul> <pre><code class="julia hljs">with _S Select
+    f &lt;= w0 when <span class=hljs-string >&#x27;0&#x27;</span>
+        w1 when others;</code></pre> <h3 id=conditional_signal_assignment ><a href="#conditional_signal_assignment" class=header-anchor >Conditional signal assignment</a></h3> <ul> <li><p>keywords <code>when</code>, <code>select</code></p> <li><p><code>f &lt;&#61; w0 when s&#61;&#39;0&#39; else w1;</code></p> </ul> <h3 id=for_generate ><a href="#for_generate" class=header-anchor >For Generate</a></h3> <ul> <li><p>created after <code>begin</code></p> </ul> <pre><code class="julia hljs">LABEL: FOR i IN <span class=hljs-number >0</span> TO M Generate
+    Component_label: PORT MAP (..);
+END Generatel</code></pre> <h3 id=if_generate ><a href="#if_generate" class=header-anchor >IF Generate</a></h3> <ul> <li><p>must be inside FOR Generate</p> </ul> <pre><code class="julia hljs">genertae_label: <span class=hljs-keyword >if</span> i = _value Generate
+    Component_label: PORT MAP(...);
+END Generate;</code></pre> <h3 id=process_statement ><a href="#process_statement" class=header-anchor >Process Statement</a></h3> <ul> <li><p>created after <code>begin</code></p> </ul> <pre><code class="julia hljs">Process(_v1, _v2, ..) &lt;- sensetivity list 
+BEGIN 
+    IF _cond THEN 
+        _statement;
+    ELSE 
+        _statement;
+    END IF;
+END PROCESS;</code></pre> <ul> <li><p><code>x&#39;Event</code> </p> </ul> <pre><code class="julia hljs">Process(clk, D)
+BEGIN 
+    IF clk&#x27;Event AND clk = <span class=hljs-string >&#x27;1&#x27;</span> Then
+        Q &lt;= D;
+    END IF;
+End Process;</code></pre> <ul> <li><p><code>wait until</code> sensitivity list is omitted </p> </ul> <pre><code class="julia hljs">Process 
+BEGIN 
+    wait until clk&#x27;Event AND clk = <span class=hljs-string >&#x27;1&#x27;</span>
+        Q &lt;= D;
+End Process;</code></pre> <h2 id=type ><a href="#type" class=header-anchor >Type </a></h2> <ul> <li><p>to create user defined signal type </p> <li><p>implemented before begin</p> </ul> <pre><code class="julia hljs"><span class=hljs-built_in >Type</span> _myType IS (.., .., ..);
+Signal _signal : _myType;</code></pre> <h2 id=user_defined_attribute ><a href="#user_defined_attribute" class=header-anchor >User defined attribute </a></h2> <ul> <li><p>used to associate some desired type of info with an object in <code>VHDL</code></p> </ul> <pre><code class="julia hljs"><span class=hljs-built_in >Type</span> _myType IS (.., .., ..);
+Attribute ENUM_ENCODING : <span class=hljs-built_in >String</span>;
+Attribute ENUM_ENCODING OF _myType IS <span class=hljs-string >&quot;         &quot;</span>;
+Signal _signal : _myType;</code></pre> <h2 id=case_statement ><a href="#case_statement" class=header-anchor >Case Statement</a></h2> <ul> <li><p>created after <code>begin</code></p> </ul> <pre><code class="julia hljs">Case _variable IS 
+    when _v1 =&gt; 
+        _statement;
+    when _v2 =&gt; 
+        _statement;
+    when others =&gt; 
+        _statement;
+End Case;</code></pre> <h2 id=generic_map ><a href="#generic_map" class=header-anchor >Generic Map</a></h2> <ul> <li><p>is similar to the port map used to assign values to the generic </p> </ul> <p>parameters of the sub-circuit.</p> <ul> <li><p>after <code>begin</code></p> </ul> <pre><code class="julia hljs">stage0 : _fnName Generic Map (_fnVal) Port Map(_in, _out);</code></pre>
+<h2 id=loop ><a href="#loop" class=header-anchor >Loop </a></h2>
+<pre><code class="julia hljs">loop-label : <span class=hljs-keyword >for</span> _i <span class=hljs-keyword >in</span> _k downto
+    _statement;
+End loop;</code></pre>
+<h2 id=functions ><a href="#functions" class=header-anchor >Functions </a></h2>
+<h3 id=syntax ><a href="#syntax" class=header-anchor >Syntax </a></h3>
+<pre><code class="julia hljs">[kind] <span class=hljs-keyword >function</span> fnName [(parameter_declaration)] 
+<span class=hljs-keyword >return</span> type_name is [function_declartian]
+<span class=hljs-keyword >begin</span> 
+    sequentail_statements
+<span class=hljs-keyword >end</span> [<span class=hljs-keyword >function</span>][function_name]</code></pre>
+<pre><code class="julia hljs"><span class=hljs-keyword >function</span> func1 (Signal A, B : <span class=hljs-keyword >in</span> <span class=hljs-built_in >Integer</span>; MaxValue: <span class=hljs-built_in >Integer</span>) <span class=hljs-keyword >return</span> <span class=hljs-built_in >Integer</span> is 
+variable Temp, Max: <span class=hljs-built_in >Integer</span>;
+BEGIN
+    Temp := A + B;
+    <span class=hljs-keyword >if</span> Temp &lt; MaxValue then
+        Max := MaxValue;
+    <span class=hljs-keyword >else</span> 
+        Max := MaxValuel
+    <span class=hljs-keyword >end</span> <span class=hljs-keyword >if</span>;
+    <span class=hljs-keyword >return</span> Max;
+<span class=hljs-keyword >end</span> func1;</code></pre>
+<ul>
+<li><p>function is calld <code>v &lt;&#61; func1&#40;m, n, 12&#41;;</code></p>
+
+</ul>
+<blockquote>
+<p>Thanks to the riginal author.</p>
+</blockquote>
+<div class=page-foot >
+  <div class=copyright >
+    &copy; Ibrahim Abou Elenein. Last modified: January 19, 2022. 
+  </div>
+</div>
+</div>
+      </div>  
+    </div> 
+    
+        
+
+
+
+    
+    
+        
+
+
+    
+    <label for=sidebar-checkbox  class=sidebar-toggle ></label>
