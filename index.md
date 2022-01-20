@@ -6,6 +6,17 @@ I am Ibrahim Abou Elenein. I study computer science and engineering at
 German University at Cairo
 
 
+## Intrests
+I'm interested in Mathematics, Machine Learning and Software Engineering.
+
+## Programming Languages
+- Python
+- Java 
+- C 
+- JavaScript 
+- Haskell ◀️ beginner but fan of it. 😃
+
+I'm a Linux user. I use Manjaro as a my main distro. I also use vim. I'm fan of tilling window mangers.
 # Contact Me
 
 ~~~
