@@ -12,7 +12,7 @@
 Here's some advice I'd like to give to my colleagues who are working on their university projects.
 
 
-I'd like to thank my friend [Ahmed Mumdouh](https://www.linkedin.com/in/ahmad45123/) for helping me write this.
+I'd like to thank my friend [Ahmed Mamdouh](https://www.linkedin.com/in/ahmad45123/) for helping me write this.
 
 
 ## Don't work for grades
