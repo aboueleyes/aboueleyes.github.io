@@ -1,8 +1,8 @@
-@def title = "My advices for doing university's projects "
+@def title = "My advice for doing university's projects "
 @def tags = ["uni"]
 @def hascode = true
 
-# My advices for doing university's projects 
+# My advice for doing university's projects 
 
 <!-- \tableofcontents  -->
 
