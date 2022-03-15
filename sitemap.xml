@@ -2,44 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>https://tlienart.github.io/FranklinTemplates.jl/blog/index.html</loc>
-    <lastmod>2022-01-20</lastmod>
+    <loc>https://tlienart.github.io/FranklinTemplates.jl/404/index.html</loc>
+    <lastmod>2022-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://tlienart.github.io/FranklinTemplates.jl/404/index.html</loc>
-    <lastmod>2022-01-20</lastmod>
+    <loc>https://tlienart.github.io/FranklinTemplates.jl/premuation-matrix/index.html</loc>
+    <lastmod>2022-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/vhdl/index.html</loc>
-    <lastmod>2022-01-20</lastmod>
+    <lastmod>2022-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/menu2/index.html</loc>
-    <lastmod>2022-01-20</lastmod>
+    <lastmod>2022-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/index.html</loc>
-    <lastmod>2022-01-20</lastmod>
+    <lastmod>2022-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://tlienart.github.io/FranklinTemplates.jl/projects/index.html</loc>
+    <lastmod>2022-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/menu3/index.html</loc>
-    <lastmod>2022-01-20</lastmod>
+    <lastmod>2022-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://tlienart.github.io/FranklinTemplates.jl/menu1/index.html</loc>
-    <lastmod>2022-01-20</lastmod>
+    <lastmod>2022-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
