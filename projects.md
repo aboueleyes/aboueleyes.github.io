@@ -28,7 +28,7 @@ using your terminal. If you are using `Windows` you may consider using [`WSL2`](
 [Mit tutorial](https://missing.csail.mit.edu/2020/course-shell/)
 ## Use Version Control 
 
-Regardless how small the project is, don't send the code to your teammates :D, use version control to track your files and use 
+Regardless how small the project is, don't send the code to your teammates by mail :D, use version control to track your files and use 
 services like `Github` to easily collaborate with your teammates.
 
 [Git tutorial](https://www.youtube.com/watch?v=eulnSXkhE7I)
