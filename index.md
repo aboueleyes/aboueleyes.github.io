@@ -2,14 +2,15 @@
 
 # About Me
 
-I am Ibrahim Abou Elenein. I study computer science and engineering at
-German University at Cairo. I also work as backend software engineer!.
 
-I love Systems (Yes Linux user), vim fan, I love Databases, I currently use Django.
+I'm Ibrahim Abou Elenein, a Computer Science and Engineering student at the German University in Cairo.
+By day, I'm a backend software engineer (Django!)
+
+I have a deep passion for Systems (yes, I'm a Linux user), I'm a vim enthusiast, and I find solace in working with databases!
 
 
 ## Interests
-I like philosophy, religion, tech and math!.
+Beyond the tech realm, my interests encompass philosophy, religion, and mathematics, which I'm always eager to explore and discuss.
 # Contact Me
 
 ~~~
