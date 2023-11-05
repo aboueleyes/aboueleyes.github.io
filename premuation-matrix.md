@@ -153,4 +153,4 @@ $$
 $$
 
 I found This matrix very interesting! It’s also an *`orthogonal`* matrix , which means it’s equal to its transpose.
-What about you? Do you find it interesting?
+What about you? Do also you find it interesting?
